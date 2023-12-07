@@ -1,0 +1,103 @@
+.outerContainer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container {
+    width: 100%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center columns horizontally */
+  }
+  
+  .col {
+    flex-basis: calc(50% - 20px); /* Adjusted to account for the padding */
+    margin: 10px; /* Add margin between columns */
+    min-width: 300px; /* Set a minimum width for columns to avoid being too narrow */
+  }
+  
+  .message {
+    padding: 20px;
+  }
+  
+  .message h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .message p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .message span {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    overflow: hidden; /* Ensure the image stays within the container */
+  }
+  
+  .mansoorSir {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+  }
+  
+  /* For large screens (greater than 1300px) */
+@media (min-width: 1300px) {
+    .container {
+      width: 1300px;
+    }
+    .outerContainer{
+        margin-top: -200px;
+        
+    }
+  }
+  @media (min-width:912px) and (max-width:1300px){
+    .outerContainer{
+      margin-top: -200px;
+    }
+
+  }
+
+  @media (min-width:768px) and (max-width:912px){
+    .outerContainer{
+      margin-top: -460px;
+    }
+
+  }
+
+  
+
+  @media (max-width:768px){
+    .message p{
+      justify-content: left;
+      text-align: left;
+    }
+    .message{
+      padding: 0;
+    }
+    .row{
+      justify-content: left;
+    }
+  }
+
+  

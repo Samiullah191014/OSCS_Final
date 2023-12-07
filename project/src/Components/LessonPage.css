@@ -1,0 +1,92 @@
+/* LessonPage.css */
+
+/* Custom styles for the table */
+.table {
+    background-color: #f2f2f2;
+  }
+  
+  .table th {
+    background-color: #18dcff;
+    color: white;
+  }
+  
+  .table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  
+  .table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+  
+  /* Custom styles for the "Download PDF" button */
+  .btn-download-pdf {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-download-pdf:hover {
+    background-color: #45a049;
+  }
+  
+  .quiz-link{
+    margin-left: 1300px;
+  }
+  .assignmentbtn{
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+  }
+  .assignmentbtn:hover{
+    color: #18dcff;
+  }
+
+  @media (max-width:1224px){
+    .quiz-link{
+      margin-left: 890px;
+    }
+  }
+
+  @media (max-width:1024px){
+    .quiz-link{
+      margin-left: 690px;
+    }
+  }
+  @media (max-width:820px){
+    .quiz-link{
+      margin-left: 630px;
+    }
+  }
+  @media (max-width:768px){
+    .quiz-link{
+      margin-left: 600px;
+    }
+  }
+
+  @media (max-width:724px){
+    .quiz-link{
+      margin-left: 500px;
+    }
+  }
+
+  @media (max-width:524px){
+    .quiz-link{
+      margin-left: 260px;
+    }
+  }
+
+  @media (max-width:420px){
+    .quiz-link{
+      margin-left: 275px;
+    }
+  }
+
+  @media (max-width:400px){
+    .quiz-link{
+      margin-left: 260px;
+    }
+  }

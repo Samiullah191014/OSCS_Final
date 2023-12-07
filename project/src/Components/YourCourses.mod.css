@@ -1,0 +1,61 @@
+/* YourCourses.css */
+
+.container9 {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .cart9 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .cart-item9 {
+    width: calc(100% / 3);
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .cart-item9 img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .cart-item-details9 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .instructor9 {
+    margin-right: 10px;
+  }
+  
+  .unenroll-button9 {
+    background-color: #18dcff;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    height: fit-content;
+    cursor: pointer;
+  }
+  
+  .unenroll-button9:hover {
+    background-color: #cc0000;
+  }
+  
+  
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    .cart-item9 {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cart-item9 {
+      width: 100%;
+    }
+  }

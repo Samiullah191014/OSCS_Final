@@ -1,0 +1,25 @@
+/* CSS for the Assignments page */
+/* ... Add any existing CSS styles here ... */
+
+/* Make the table responsive */
+.table {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  
+  /* Decrease font size for smaller screens */
+  @media (max-width: 768px) {
+    .table {
+      font-size: 11.3px;
+    }
+  }
+  
+  /* Adjust column sizes for smaller screens */
+  @media (max-width: 576px) {
+    .table th,
+    .table td {
+      padding: 4px 2px;
+    }
+  }
+  

@@ -1,0 +1,172 @@
+.parent1-container {
+    display: flex;
+    margin-top: -150px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .newscontainer {
+    display: flex;
+    flex-direction: row;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    width: 1300px; /* Adjust width as needed */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+  }
+  .systemname{
+    font-size: 20px;
+    font-weight: bold;
+    /* margin-bottom: 10px; */
+  }
+  
+  .newsrow {
+    display: flex;
+    width: 100%;
+  }
+  
+  .newscol-6 {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .newscol-6 h1 {
+    font-size: 27px;
+    margin-bottom: 10px;
+  }
+  
+  .newscol-6 p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .ticker-container {
+    overflow: hidden;
+    width: fit-content /* Adjust the width to take 40% of the newscontainer */
+  }
+  
+  .ticker {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    animation: ticker-animation linear infinite;
+    animation-duration: 20s; /* Adjust the duration as needed */
+    animation-timing-function: linear;
+    animation-play-state: running;
+  }
+  
+  .ticker li {
+    animation: ticker-item-animation linear infinite;
+    animation-duration: 20s; /* Adjust the duration to match the parent animation */
+    animation-timing-function: linear;
+    animation-play-state: running;
+  }
+
+  
+  
+  .ticker li .alink {
+    display: block;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    color: rgb(43, 147, 245);
+    text-decoration: none;
+    margin-bottom: 5px;
+  }
+  
+  .ticker li .alink:hover {
+    background-color: #ddd;
+  }
+
+  
+  /* .news-label {
+    position: absolute;
+    top: -15px;
+    left: 3px;
+    
+  } */
+
+ 
+  
+
+/* For tablets and larger mobile devices */
+@media screen and (max-width: 1024px) {
+    .newscol-6 {
+      flex: 100%; /* Make columns take full width on smaller screens */
+      padding: 10px;
+    }
+  
+    .ticker-container {
+      width: 100%; /* Take full width on smaller screens */
+      max-width: none; /* Remove max-width on smaller screens */
+    }
+    .parent1-container{
+      margin-top: -500px;
+    }
+  }
+
+  
+  /* @media (min-width:768px) and (max-width:912px){
+    .parent1-container{
+      margin-top: -460px;
+    }
+
+  } */
+  
+  /* For smaller mobile devices */
+  @media screen and (max-width: 768px) {
+    .newscol-6 {
+      flex: 100%; /* Make columns take full width on smaller screens */
+      padding: 10px;
+    }
+    .parent1-container{
+      margin-top: 30px;
+    }
+    
+  
+    .newsrow {
+      flex-direction: column; /* Stack the columns on smaller screens */
+    }
+  
+    .ticker-container {
+      width: 100%; /* Take full width on smaller screens */
+      max-width: none; /* Remove max-width on smaller screens */
+    }
+  }
+  
+  /* Rest of your CSS styles for links and other elements */
+  
+  /* Rest of your CSS styles for links and other elements */
+  
+  
+  @keyframes ticker-animation {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  
+  @keyframes ticker-item-animation {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+ 
+  
+
